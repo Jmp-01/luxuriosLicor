@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos - Luxurios Licor</title>
+    <link rel="stylesheet" href="styles 2.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <h1>Luxurios Licor</h1>
+        <nav>
+            <div class="LOGO">
+                <a href="index.html">
+                    <img src="LOGO.png" alt="Logo de la página" class="logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="carrito.html">Carrito </a></li>
+            </ul>
+        </nav>
+
+        <div class="user-actions">
+            <a href=""></a>
+        </div>
+
+        <div class="search-bar">
+            <button type="button">🛒</button>
+            <input type="text" id="buscador" placeholder="Buscar...">
+            <button type="button">🔍</button>
+        </div>
+    </header>
+
+     <script>
+        const buscador = document.getElementById("buscador");
+        const productos = document.querySelectorAll(".producto")
+        buscador.addEventListener("keyup", function(){
+            const texto =this.value.toLowerCase();
+            productos.forEach(function (producto){
+                const nombre =producto.querySelector("h3").textContent.toLocaleLowerCase();
+                if(nombre.includes(texto)){
+                    producto.style.display="";
+                } else{
+                    producto.style.display="none";
+                }
+            });
+        });
+    </script>
+
+
+    <section id="productos">
+        <h2>Productos en el carrito</h2>
+        <div id="carrito">
+
+            <!-- Los productos añadidos al carrito se mostrarán aquí -->
+        </div>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+    </section>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

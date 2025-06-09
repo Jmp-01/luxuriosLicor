@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('licores.jpg');
+    background-color: #747474;
+    background-position: center -29%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-image: url('banner.jpg');
+
+    background-color: #333;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a300;
+}
+
+.search-bar {
+    position: fixed; top: 10px; right: 10px;    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #74747400;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Asegura que el main ocupe todo el espacio disponible */
+main {
+    flex: 1;
+}
+
+.LOGO img {
+   
+    width: 250px; /* Ajusta el tamaño del logo */
+    height: auto;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    
+
+}
